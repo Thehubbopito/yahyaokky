@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-">
+    <title>Header OPITO</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Bar biru atas */
+        .top-bar {
+            background-color: #0b5fa5;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 20px;
+        }
+        ul{
+            color: #ffffff;
+            font-size: large;
+            display: flex;
+            justify-content:space-between ;
+            padding: 190px;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Area header bawah */
+        .header {
+            background-color: #e6e6e6;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 20px;
+        }
+
+        .logo {
+            border: 3px solid #e6e6e6;
+            background-color: white;
+            padding: 0px 0px;
+            border-radius: 6px;
+            position: absolute;
+            top:18px
+        
+        }
+
+    </style>
+   </head>
+   <body>
+
+    <div class="top-bar">
+   <ul>
+    Log in
+   </ul>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <svg width="170" height="75" viewBox="0 0 300 200"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Warna utama -->
+  <defs>
+    <style>
+      .blue { fill: #1f5fa8; }
+      .stroke-blue { stroke: #1f5fa8; stroke-width: 6; fill: none; }
+      .text { font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Lingkaran -->
+  <circle cx="150" cy="100" r="70" class="stroke-blue"/>
+
+  <!-- Garis diagonal (kiri atas) -->
+  <rect x="110" y="38" width="10" height="52"
+        transform="rotate(-20 110 35)" class="blue"/>
+  <rect x="125" y="35" width="10" height="55"
+        transform="rotate(-20 125 35)" class="blue"/>
+  <rect x="140" y="32" width="10" height="58"
+        transform="rotate(-20 140 35)" class="blue"/>
+
+  <!-- Teks OPITO -->
+  <text x="150" y="130"
+        text-anchor="middle"
+        font-size="36"
+        class="blue text">
+    OPITO
+  </text>
+
+</svg>
+        </div>
+    </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate a Certificate</title>
+    <style>
+         /* Box Error */
+    .error-box{
+        display: none;
+        background-color: #c40000;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        height: 80px;
+        width: 800px;
+    }
+
+    .error-box ul{
+        margin: 5px 0 0 20px;
+    }
+     label{
+    padding-left: 2%;
+}
+
+input{
+    padding: 15px;
+    font-size: larger;
+    position: relative;
+    left: 20px;
+}
+       
+
+        .container{
+            padding-left: 1%;
+        }
+       
+         .captcha-box {
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            left: 20px;
+        }
+        span{
+            position: relative;
+            left: 10px;
+        }
+
+        .captcha-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .captcha-left input {
+            margin-right: 8px;
+        }
+
+        .captcha-right {
+            text-align: right;
+            font-size: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Validate a certificate</h2>
+    <br>
+    <div class="error-box" id="pesan" >
+    <strong>⚠ Sorry! There are a few problems with the selections you made below. Please try again.</strong>
+    <br>Please enter the reference number from the certificate.
+    <br>Please confirm you are not a robot
+    
+</div>
+</div>
+
+   <div class="box">
+ <label><strong>Learner's surname</strong></label>
+ <br>
+ <br>
+     <input type="text" id= "nama" value="Yahya" size="30">
+     <br>
+     <br>
+     
+     <label><strong>Certificate reference</strong></label><br><br>
+     <input type="text" id="sertifikat" value ="" size="30">
+   
+     <br>
+     <br>
+    </div>
+    </div>
+    
+    <div class="captcha-box">
+            <div class="captcha-left">
+                
+                <input type="checkbox" id="robot">
+                <span style="font-size: larger;padding: 12px;">Saya bukan robot</span>
+            </div>
+            
+            <div class="captcha-right">
+                reCAPTCHA<br>
+                Privacy - Persyaratan</div>
+                
+                <div class="button">
+                </div>
+                </div>
+                <br>
+                <br>
+                <br>
+              
+              <style>
+                    .buttonbiru{
+                        background-color: #0b5fa5;
+                        color: #ffffff;
+                        padding: 10px;
+                        font-size: larger;
+                        position: relative;
+                        left: 20px;
+                        
+
+
+                    }
+                    .buttonhijau{
+                        background-color: #1e7e34;
+                        color: #ffffff;
+                        padding: 10px;
+                        font-size: larger;
+                       float: right;
+                       position: relative;
+                       right: 3%;
+                        
+                    }
+
+                </style>
+                <div>
+                     <button onclick="validasi()" class="buttonbiru">Validate certificate</button>
+
+        <button type ="button" class="buttonhijau"> Click Here To Validate Multiple Certificates</button>
+                </div>
+<script>
+
+function validasi(){
+
+let nama = document.getElementById("nama").value;
+let sertifikat = document.getElementById("sertifikat").value;
+let robot = document.getElementById("robot").checked;
+let pesan = document.getElementById("pesan");
+
+if(nama !== "Yahya"){
+pesan.style.display = "block";
+return
+}
+
+if(sertifikat !== "OPITOLXHX1I1JFZ"){
+pesan.style.display = "block";
+return
+}
+
+
+if(!robot){
+pesan.style.display = "block";
+return
+}
+window.location.href = "https://thehubbopito.github.io/yahya/"
+
+}
+
+</script>
